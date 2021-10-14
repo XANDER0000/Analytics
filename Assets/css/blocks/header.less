@@ -1,0 +1,154 @@
+// main: ../style.less
+
+.header {
+    position: absolute;
+    background-color: transparent;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+
+    max-height: 100px;
+
+    &.fixed {
+        position: fixed;
+        box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.1);
+        background-color: rgba(#172755, .9);
+    }
+
+    @media @mobile {
+        max-height: 60px;
+    }
+}
+
+.header__body {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 15px 0;
+
+    @media @mobile {
+        padding: 8px 0;
+    }
+
+    .btn--header2 {
+        @media (max-width: 520px) {
+            display: none;
+        }
+    }
+}
+
+.header__logo {
+    cursor: pointer;
+}
+
+.header__logo__img {
+    width: 184px;
+    height: 40px;
+
+    @media (max-width: 350px) {
+        width: 138px;
+        height: 30px;
+    }
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+
+    @media (max-width: 920px) {
+        display: none;
+
+        height: auto;
+        padding: 1rem;
+        width: 100%;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        z-index: 1000;
+        text-align: center;
+        box-shadow: 0 5px 30px #1c0238;
+        width: 100%;
+        background-color: rgba(#1c0238, .8);
+
+        &.show {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+}
+
+.nav .btn {
+    display: none;
+
+    @media (max-width: 520px) {
+        display: flex;
+        margin-left: 0;
+        font-size: 14px;
+        min-width: 130px;
+
+        padding: 6px 25px;
+    }
+}
+
+.nav__link {
+    position: relative;
+    margin-right: 36px;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 16px;
+    color: #8794BA;
+    line-height: 19px;
+    transition: all .2s ease-in-out;
+
+    &:last-child {
+        margin-right: 0px;
+    }
+
+    &:hover {
+        color: #EF2A82;
+    }
+
+    &:focus {
+        color: #EF2A82;
+    }
+
+    @media (max-width: 920px) {
+        font-size: 18px;
+
+        margin: 0 0 13px 0;
+        &:last-child {
+            margin: 0;
+        }
+    }
+}
+
+.header__buttons {
+    display: flex;
+
+    &.btn:first-child {
+        margin-right: 40px;
+    }
+}
+
+.burger {
+    text-decoration: none;
+    border: none;
+    display: none;
+    cursor: pointer;
+    outline: none;
+    background: none;
+    padding: 0;
+    margin: 0 0 0 20px;
+
+    @media (max-width: 920px) {
+        display: block;
+    }
+}
+
+.burger__img {
+    width: 24px;
+    height: 24px;
+}

@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analytics</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="Assets/css/style.css">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- Jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!-- Font-awesome -->
+    <script src="https://kit.fontawesome.com/15a267786d.js" crossorigin="anonymous"></script>
+
+    <!-- Slick CSS -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+</head>
+<body>
+
+<header class="header" id="header">
+    <div class="container">
+        <div class="header__body">
+
+            <div class="header__logo" data-scroll="#Home">
+                <img class="header__logo__img" src="Assets/images/logos/img1.svg" alt="logo">
+            </div>
+
+            <nav class="nav" id="nav">
+                <a class="nav__link" data-scroll="#Products" href="">Products</a>
+                <a class="nav__link" data-scroll="#Pricing" href="">Pricing</a>
+                <a class="nav__link" data-scroll="#FAQ" href="">FAQ</a>
+                <a class="nav__link" data-scroll="#Blog" href="">Blog</a>
+                <a class="nav__link" data-scroll="#Blog" href="">Blog</a>
+
+                <div>
+                    <button class="btn btn--header2" type="button" id="">Sign Up</button>
+                </div>
+            </nav>
+
+            <div class="header__buttons">
+                <button class="btn btn--header1" type="button" id="">Sign in</button>
+                <button class="btn btn--header2" type="button" id="">Sign Up</button>
+
+                <button class="burger" type="button" id="navToggle">
+                    <img class="burger__img" src="Assets/images/intro/burger.svg" alt="">
+                </button>
+            </div>
+
+        </div><!--header__body -->
+    </div><!--container -->
+</header><!--header -->
+
+<div class="intro" id="Home">
+    <div class="container">
+        <div class="intro__inner">
+            <div class="intro__inner_img">
+                <img src="Assets/images/intro/img2.png" alt="">
+            </div>
+            <div class="intro__content">
+                <div class="intro__title">Monitor your business on real-time dashboard</div>
+                <div class="intro__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum nisi aliquet volutpat pellentesque volutpat est. Sapien in etiam vitae nibh nunc mattis imperdiet sed nullam. </div>
+                <div>
+                    <button class="btn" type="button" id="">Try for free</button>
+                </div>
+            </div>
+            <div class="intro__col_img">
+                <img src="Assets/images/intro/img1.png" alt="">
+            </div>
+        </div>
+    </div><!--container -->
+</div><!--intro -->
+
+<div class="features" id="Features">
+    <div class="container">
+        <div class="features__header">
+            <div class="features__header_title">Main Features</div>
+            <div class="features__header_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum nisi aliquet volutpat pellentesque volutpat est. Sapien in etiam vitae nibh nunc mattis imperdiet sed nullam. Vitae et, tortor pulvinar risus pulvinar sit amet. Id vel in nam malesuada.</div>
+        </div>
+
+        <div class="features__content">
+            <div class="features__card">
+                <div>
+                    <img class="features__card_img" src="Assets/images/features/img1.svg" alt="">
+                </div>
+                <div class="features__card_title">Monitoring 24/7</div>
+                <div class="features__card_text">Lorem ipsum dolor sit amet, consectetur adipis
+                    cing elit. Elementum nisi aliquet volutpat.</div>
+            </div>
+
+            <div class="features__card">
+                <div>
+                    <img class="features__card_img" src="Assets/images/features/img2.svg" alt="">
+                </div>
+                <div class="features__card_title">Widget System</div>
+                <div class="features__card_text">Sapien in etiam vitae nibh nunc mattis imperdiet
+                    sed nullam. Vitae et, tortor pulvinar risus pulvinar.</div>
+            </div>
+
+            <div class="features__card">
+                <div>
+                    <img class="features__card_img" src="Assets/images/features/img3.svg" alt="">
+                </div>
+                <div class="features__card_title">Best Performance</div>
+                <div class="features__card_text">Lorem ipsum dolor sit amet, consectetur adipis
+                    cing elit. Elementum nisi aliquet volutpat.</div>
+            </div>
+        </div><!--features__content -->
+    </div><!--container -->
+</div><!--features -->
+
+<div class="sections" id="Blog">
+    <div class="container">
+        <div class="section">
+            <div class="section__content">
+                <div class="section__col_title">Automated Reports
+                    & Widget Alerts</div>
+                <div class="section__col_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum nisi aliquet volutpat pellentesque volutpat est. Sapien in etiam vitae nibh nunc mattis imperdiet sed nullam. Vitae et, tortor pulvinar risus pulvinar sit amet.</div>
+            </div>
+
+            <div class="section__col">
+                <img class="section__col_img" src="Assets/images/sections/img1.png" alt="">
+            </div>
+        </div>
+
+        <div class="section section--2">
+
+            <div class="section__col">
+                <img class="section__col_img" src="Assets/images/sections/img2.png" alt="">
+            </div>
+
+            <div class="section__content">
+                <div class="section__col_title">Fully customizable to address your needs </div>
+                <div class="section__col_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum nisi aliquet volutpat pellentesque volutpat est. Sapien in etiam vitae nibh nunc mattis imperdiet sed nullam. Vitae et, tortor pulvinar risus pulvinar sit amet.</div>
+            </div>
+
+            <div class="section__col section__col--2">
+                <img class="section__col_img" src="Assets/images/sections/img2.png" alt="">
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="section__content">
+                <div class="section__col_title">Pre-built Dashboard Templates</div>
+                <div class="section__col_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum nisi aliquet volutpat pellentesque volutpat est. Sapien in etiam vitae nibh nunc mattis imperdiet sed nullam. Vitae et, tortor pulvinar risus pulvinar sit amet.</div>
+            </div>
+
+            <div class="section__col">
+                <img class="section__col_img" src="Assets/images/sections/img3.png" alt="">
+            </div>
+        </div>
+    </div><!--container -->
+</div><!--sections -->
+
+<div class="footer">
+    <div class="container">
+
+        <div class="price" id="Pricing">
+            <div class="price__header">
+                <div class="price__header_title">Pricing Plans</div>
+                <div class="price__header_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum nisi aliquet
+                    volutpat pellentesque volutpat est. </div>
+            </div>
+
+            <div class="price__cards">
+                <div class="price__card">
+                    <div class="price__card_title">Starter<span>up to 3 users</span></div>
+                    <div class="price__card_price"><span>$</span>29</div>
+                    <div class="price__card_per">per month</div>
+                    <div>
+                        <button class="btn" type="button" id="">Order</button>
+                    </div>
+                </div>
+
+                <div class="price__card">
+                    <div class="price__card_title">Standard<span>up to 20 users</span></div>
+                    <div class="price__card_price"><span>$</span>99</div>
+                    <div class="price__card_per">per month</div>
+                    <div>
+                        <button class="btn" type="button" id="">Order</button>
+                    </div>
+                </div>
+
+                <div class="price__card">
+                    <div class="price__card_title">Premium<span>up to 200 users</span></div>
+                    <div class="price__card_price"><span>$</span>299</div>
+                    <div class="price__card_per">per month</div>
+                    <div>
+                        <button class="btn" type="button" id="">Order</button>
+                    </div>
+                </div>
+            </div><!--price__cards -->
+
+
+            <div class="price__cards price__cards--2" data-slider>
+                <div>
+                    <div class="price__card price__card--2">
+                        <div class="price__card_title">Starter<span>up to 3 users</span></div>
+                        <div class="price__card_price"><span>$</span>29</div>
+                        <div class="price__card_per">per month</div>
+                        <div>
+                            <button class="btn" type="button" id="">Order</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="price__card price__card--2">
+                        <div class="price__card_title">Standard<span>up to 20 users</span></div>
+                        <div class="price__card_price"><span>$</span>99</div>
+                        <div class="price__card_per">per month</div>
+                        <div>
+                            <button class="btn" type="button" id="">Order</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="price__card price__card--2">
+                        <div class="price__card_title">Premium<span>up to 200 users</span></div>
+                        <div class="price__card_price"><span>$</span>299</div>
+                        <div class="price__card_per">per month</div>
+                        <div>
+                            <button class="btn" type="button" id="">Order</button>
+                        </div>
+                    </div>
+                </div>
+            </div><!--price__cards--2 -->
+        </div><!--price -->
+
+
+        <div class="copyright">
+                <div data-scroll="#Home">
+                    <img class="copyright__img" src="Assets/images/logos/img2.svg" alt="">
+                </div>
+
+                <nav class="nav" id="nav">
+                    <a class="nav__link" data-scroll="#About" href="">Products</a>
+                    <a class="nav__link" data-scroll="#Features" href="">Pricing Plans</a>
+                    <a class="nav__link" data-scroll="#Service" href="">FAQ</a>
+                    <a class="nav__link" data-scroll="#Price" href="">Blog</a>
+                </nav>
+
+                <div class="copyright__social">
+                    <a class="footer__col_soc" href=""><i class="fab fa-facebook-f"></i></a>
+
+                    <a class="footer__col_soc" href=""><i class="fab fa-twitter"></i></a>
+
+                    <a class="footer__col_soc" href=""><i class="fab fa-instagram"></i></a>
+                </div>
+
+        </div>
+    </div>
+</div>
+
+<!-- Js -->
+<script src="Assets/js/app.js"></script>
+
+<!-- Slick -->
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+</body>
+</html>
